@@ -1,0 +1,38 @@
+Speed Dating Match Prediction
+Predicting the likelihood to match based on different factors.
+
+
+VariablesName Definition Types
+gender Gender of self. Categorical
+age Ageofself. Numerical
+age_o Ageofpartner.	Numerical
+samerace Whetherthetwopersonshavethesameraceornot. Categorical
+attractive_o Ratingbypartner(aboutme)atnightofeventonattractiveness. Numerical
+sincere_o Ratingbypartner(aboutme)atnightofeventonsincerity. Numerical
+intelligence_o Ratingbypartner(aboutme)atnightofeventonintelligence. Numerical
+funny_o Ratingbypartner(aboutme)atnightofeventonbeingfunny. Numerical
+ambition_o Ratingbypartner(aboutme)atnightofeventonbeingambitious. Numerical
+shared_interests_o Ratingbypartner(aboutme)atnightofeventonsharedinterest. Numerical
+attractive_important Whatdoyoulookforinapartner-attractiveness. Numerical
+sincere_important Whatdoyoulookforinapartner-sincerity. Numerical
+intelligence_important Whatdoyoulookforinapartne-intelligence. Numerical
+funny_important Whatdoyoulookforinapartner-beingfunny. Numerical
+ambition_important Whatdoyoulookforinapartner-ambition. Numerical
+shared_interests_important Whatdoyoulookforinapartner-sharedinterests. Numerical
+attractive Rateyourself-attractiveness. Numerical
+sincere Rateyourself-sincerity. Numerical
+intelligence Rateyourself-intelligence. Numerical
+funny Rateyourself-beingfunny. Numerical
+ambition Rateyourself-ambition. Numerical
+attractive_partner Rateyourpartner-attractiveness. Numerical
+sincere_partner Rateyourpartner-sincerity. Numerical
+intelligence_partner Rateyourpartner-intelligence. Numerical
+funny_partner Rateyourpartner-beingfunny. Numerical
+ambition_partner Rateyourpartner-ambition. Numerical
+shared_interests_partner Rateyourpartner-sharedinterests. Numerical
+interests_correlate Correlationbetweenparticipant'sandpartner'sratingsofinterests. Numerical
+expected_num_interested_in_me Outofthe20peopleyouwillmeet,howmanydoyouexpectwillbeinterestedin. Numerical
+expected_num_matches Howmanymatchesdoyouexpecttoget? Numerical
+like Didyoulikeyourpartner? Numerical
+guess_prob_liked Howlikelydoyouthinkitisthatyourpartnerlikesyou? Numerical
+match Match(yes/no). Categorical
