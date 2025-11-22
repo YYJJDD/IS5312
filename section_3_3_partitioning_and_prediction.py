@@ -269,7 +269,14 @@ y_pred_best = results[best_model_name]['y_pred']
 y_pred_proba_best = results[best_model_name]['y_pred_proba']
 
 print("\nClassification Report:")
-print(classification_report(y_test, y_pred_best, target_names=['No Match', 'Match']))
+# 检查实际存在的类别，避免只有一个类别时的错误
+unique_classes = sorted(np.unique(np.concatenate([y_test, y_pred_best])))
+if len(unique_classes) == 2:
+    target_names = ['No Match', 'Match']
+else:
+    # 如果只有一个类别，根据实际类别设置名称
+    target_names = ['No Match' if 0 in unique_classes else 'Match']
+print(classification_report(y_test, y_pred_best, target_names=target_names, labels=unique_classes, zero_division=0))
 
 print("\nConfusion Matrix:")
 cm = results[best_model_name]['confusion_matrix']

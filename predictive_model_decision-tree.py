@@ -1,4 +1,6 @@
 # 定义预测函数
+import numpy as np
+from sklearn.metrics import classification_report
 from sklearn.model_selection import train_test_split
 from sklearn.tree import DecisionTreeClassifier
 
@@ -23,3 +25,14 @@ dt_model, y_pred = train_predict_model(X_train, y_train, X_test)
 
 print("dt_model:", dt_model)
 print("y_pred:", y_pred)
+
+print("\nClassification Report:")
+# 检查实际存在的类别
+unique_classes = sorted(np.unique(np.concatenate([y_test, y_pred])))
+if len(unique_classes) == 2:
+    target_names = ['No Match', 'Match']
+else:
+    # 如果只有一个类别，根据实际类别设置名称
+    target_names = ['No Match' if 0 in unique_classes else 'Match']
+classification_report_result = classification_report(y_test, y_pred, target_names=target_names, labels=unique_classes, zero_division=0)
+print(classification_report_result)
