@@ -1,6 +1,7 @@
 # 定义预测函数
 import numpy as np
-from sklearn.metrics import classification_report
+import matplotlib.pyplot as plt
+from sklearn.metrics import classification_report, confusion_matrix, ConfusionMatrixDisplay
 from sklearn.model_selection import train_test_split
 from sklearn.tree import DecisionTreeClassifier
 
@@ -36,3 +37,18 @@ else:
     target_names = ['No Match' if 0 in unique_classes else 'Match']
 classification_report_result = classification_report(y_test, y_pred, target_names=target_names, labels=unique_classes, zero_division=0)
 print(classification_report_result)
+
+# 绘制混淆矩阵
+print("\n绘制混淆矩阵...")
+cm = confusion_matrix(y_test, y_pred, labels=unique_classes)
+print(f"\n混淆矩阵:\n{cm}")
+
+# 使用 ConfusionMatrixDisplay 绘制混淆矩阵
+fig, ax = plt.subplots(figsize=(8, 6))
+disp = ConfusionMatrixDisplay(confusion_matrix=cm, display_labels=target_names)
+disp.plot(ax=ax, cmap='Blues', values_format='d')
+plt.title('Decision Tree Confusion Matrix', fontsize=14, fontweight='bold')
+plt.tight_layout()
+plt.savefig('decision_tree_confusion_matrix.png', dpi=300, bbox_inches='tight')
+print("✓ 混淆矩阵已保存为 'decision_tree_confusion_matrix.png'")
+plt.show()
