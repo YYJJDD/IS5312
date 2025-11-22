@@ -1,11 +1,16 @@
 # 筛选数值变量（排除非数值类型列）
 import numpy as np
+import pandas as pd
 from matplotlib import pyplot as plt
-from pandas.io.common import file_path_to_url
 
+from extract_variables_column import var_names
 from read_csv_data import df_clean
 
-numeric_cols = df_clean.select_dtypes(include=[np.number]).columns.tolist()
+df = pd.read_csv('SpeedDating.csv', header=None)
+# 添加列名
+df.columns = var_names
+
+numeric_cols = df.select_dtypes(include=[np.number]).columns.tolist()
 # 描述性统计
 desc_stats = df_clean[numeric_cols].describe()
 print("数值变量描述性统计：")
@@ -19,9 +24,9 @@ axes = axes.flatten()
 for i, col in enumerate(numeric_cols):
     if i < len(axes):
         df_clean[col].hist(ax=axes[i], bins=20, edgecolor='black')
-        axes[i].set_title(f'{col}分布')
+        axes[i].set_title(f'{col}distribution')
         axes[i].set_xlabel(col)
-        axes[i].set_ylabel('频数')
+        axes[i].set_ylabel('frequency')
 
 # 隐藏多余子图
 for i in range(len(numeric_cols), len(axes)):
