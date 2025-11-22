@@ -24,7 +24,7 @@ axes = axes.flatten()
 for i, col in enumerate(numeric_cols):
     if i < len(axes):
         df_clean[col].hist(ax=axes[i], bins=20, edgecolor='black')
-        axes[i].set_title(f'{col}distribution')
+        axes[i].set_title(f'{col} distribution')
         axes[i].set_xlabel(col)
         axes[i].set_ylabel('frequency')
 
