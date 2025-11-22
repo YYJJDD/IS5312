@@ -4,11 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1a64ca06-34ad-4f45-b34f-4b8169be6872" name="Changes" comment="six_qualities_importance_of_the_first_participant_pie_chart.png">
-      <change afterPath="$PROJECT_DIR$/dataforanalysis_relative_attractive.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pie_chart.py" beforeDir="false" afterPath="$PROJECT_DIR$/pie_chart.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/six_qualities_importance_of_the_first_participant_pie_chart.png" beforeDir="false" afterPath="$PROJECT_DIR$/six_qualities_importance_of_the_first_participant_pie_chart.png" afterDir="false" />
+    <list default="true" id="1a64ca06-34ad-4f45-b34f-4b8169be6872" name="Changes" comment="relative attractive">
+      <change afterPath="$PROJECT_DIR$/separate_the_training-set_from_the_test-set.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,6 +40,7 @@
     "Python.main.executor": "Run",
     "Python.pie_chart.executor": "Run",
     "Python.read_csv_data.executor": "Debug",
+    "Python.separate_the_training-set_from_the_test-set.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
     "git-widget-placeholder": "master",
@@ -54,7 +52,7 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="Python.pie_chart">
+  <component name="RunManager" selected="Python.separate_the_training-set_from_the_test-set">
     <configuration name="bar_chart" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="IS5312" />
       <option name="ENV_FILES" value="" />
@@ -70,29 +68,6 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/bar_chart.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="extract_variables_column" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="IS5312" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="D:\workspace\GitHub\python\IS5312\extract_variables_column.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -170,13 +145,36 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="separate_the_training-set_from_the_test-set" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="IS5312" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/separate_the_training-set_from_the_test-set.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.separate_the_training-set_from_the_test-set" />
         <item itemvalue="Python.pie_chart" />
         <item itemvalue="Python.bar_chart" />
         <item itemvalue="Python.histogram" />
         <item itemvalue="Python.read_csv_data" />
-        <item itemvalue="Python.extract_variables_column" />
       </list>
     </recent_temporary>
   </component>
@@ -194,7 +192,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1763740625007</updated>
-      <workItem from="1763740722799" duration="10759000" />
+      <workItem from="1763740722799" duration="11105000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <option name="closed" value="true" />
@@ -268,7 +266,15 @@
       <option name="project" value="LOCAL" />
       <updated>1763781582876</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="relative attractive">
+      <option name="closed" value="true" />
+      <created>1763782056879</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1763782056879</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -292,7 +298,8 @@
     <MESSAGE value="histogram" />
     <MESSAGE value="bar chart" />
     <MESSAGE value="six_qualities_importance_of_the_first_participant_pie_chart.png" />
-    <option name="LAST_COMMIT_MESSAGE" value="six_qualities_importance_of_the_first_participant_pie_chart.png" />
+    <MESSAGE value="relative attractive" />
+    <option name="LAST_COMMIT_MESSAGE" value="relative attractive" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -308,6 +315,7 @@
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/IS5312$bar_chart.coverage" NAME="bar_chart Coverage Results" MODIFIED="1763780239426" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/IS5312$pie_chart.coverage" NAME="pie_chart Coverage Results" MODIFIED="1763781843307" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/IS5312$separate_the_training_set_from_the_test_set.coverage" NAME="separate_the_training-set_from_the_test-set Coverage Results" MODIFIED="1763782280173" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/IS5312$main.coverage" NAME="main Coverage Results" MODIFIED="1763744225863" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/IS5312$read_csv_data.coverage" NAME="read_csv_data Coverage Results" MODIFIED="1763777372437" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/IS5312$histogram.coverage" NAME="histogram Coverage Results" MODIFIED="1763779201705" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
