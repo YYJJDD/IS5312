@@ -12,17 +12,17 @@ partner_cols = ['attractive_partner', 'sincere_partner', 'intelligence_partner',
 first_participant = df_clean.iloc[0]
 important_values = first_participant[important_cols].values
 
-plt.figure(figsize=(8, 8))
+plt.figure(figsize=(13, 12))
 plt.pie(important_values, labels=important_cols, autopct='%1.1f%%', startangle=90, colors=plt.cm.Set3.colors)
 plt.title('six qualities importance of the first participant', fontsize=16)
 plt.axis('equal')
 plt.show()
-plt.savefig('six_qualities_importance_of_the_first_participant_pie_chart.png', bbox_inches='tight')
+# plt.savefig('six_qualities_importance_of_the_first_participant_pie_chart.png', bbox_inches='tight')
 
 # 计算相对分数并添加到数据框
 for imp_col, par_col in zip(important_cols, partner_cols):
     rel_col = f'relative_{imp_col.split("_")[0]}'
-    df_clean[rel_col] = df_clean[par_col] * (df_clean[imp_col] / 100)
+    df_clean[rel_col] = (df_clean[par_col] * (df_clean[imp_col] / 100)).round(2)
 
 # 保存为新CSV
 df_clean.to_csv('dataforanalysis_relative_attractive.csv', index=False)
