@@ -5,7 +5,7 @@ from extract_variables_column import var_names
 
 df = pd.read_csv('SpeedDating.csv', header=None)
 # 添加列名
-df.columns = var_names[:len(df.columns)]  # 确保列名数量匹配
+df.columns = var_names
 
 # 删除缺失值
 df_clean = df.dropna()
