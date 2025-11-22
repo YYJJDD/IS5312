@@ -23,3 +23,6 @@ plt.savefig('six_qualities_importance_of_the_first_participant_pie_chart.png', b
 for imp_col, par_col in zip(important_cols, partner_cols):
     rel_col = f'relative_{imp_col.split("_")[0]}'
     df_clean[rel_col] = df_clean[par_col] * (df_clean[imp_col] / 100)
+
+# 保存为新CSV
+df_clean.to_csv('dataforanalysis_relative_attractive.csv', index=False)
