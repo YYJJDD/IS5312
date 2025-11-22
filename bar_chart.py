@@ -14,10 +14,10 @@ print(age_d_count)
 
 # 3. 绘制条形图（不分组，每个年龄差单独展示）
 plt.figure(figsize=(14, 7))
-age_d_count.plot(kind='bar', color='lightcoral', edgecolor='black', alpha=0.8, width=0.8)
-plt.title('年龄差分布条形图（不分组）', fontsize=16)
-plt.xlabel('年龄差（岁）', fontsize=14)
-plt.ylabel('观测数', fontsize=14)
+age_d_count.plot(kind='bar', color='skyblue', edgecolor='black', alpha=0.8, width=0.8)
+plt.title('Age Difference Distribution', fontsize=16)
+plt.xlabel('Number of Observations', fontsize=14)
+plt.ylabel('Age Difference Groups', fontsize=14)
 plt.xticks(rotation=0)  # 年龄差标签水平显示，不旋转
 plt.grid(axis='y', alpha=0.3)
 plt.tight_layout()
