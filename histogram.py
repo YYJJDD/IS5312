@@ -34,3 +34,5 @@ for i in range(len(numeric_cols), len(axes)):
 
 plt.tight_layout()
 plt.show()
+
+plt.savefig('histogram.png')
