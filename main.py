@@ -92,7 +92,12 @@ print(df.describe())
 print("\n\nTarget variable distribution (match):")
 if 'match' in df.columns:
     print(df['match'].value_counts())
-    print(f"\nMatch rate: {df['match'].mean():.2%}")
+    # Convert to numeric for mean calculation (handle string values)
+    match_numeric = pd.to_numeric(df['match'].astype(str).str.replace("b'", "").str.replace("'", "").str.strip(), errors='coerce')
+    if match_numeric.notna().any():
+        print(f"\nMatch rate: {match_numeric.mean():.2%}")
+    else:
+        print("\nMatch rate: Could not calculate (non-numeric values)")
 else:
     print("Warning: 'match' column not found. Checking for similar column names...")
     print([col for col in df.columns if 'match' in col.lower()])
