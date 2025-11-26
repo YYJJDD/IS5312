@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1a64ca06-34ad-4f45-b34f-4b8169be6872" name="Changes" comment="predictive model">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/read_csv_data.py" beforeDir="false" afterPath="$PROJECT_DIR$/read_csv_data.py" afterDir="false" />
+    <list default="true" id="1a64ca06-34ad-4f45-b34f-4b8169be6872" name="Changes" comment="read csv data">
+      <change beforePath="$PROJECT_DIR$/dataforanalysis.csv" beforeDir="false" afterPath="$PROJECT_DIR$/dataforanalysis.csv" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,7 +40,7 @@
     "Python.main.executor": "Run",
     "Python.pie_chart.executor": "Run",
     "Python.predictive_model_decision-tree.executor": "Debug",
-    "Python.read_csv_data.executor": "Debug",
+    "Python.read_csv_data.executor": "Run",
     "Python.section_3_3_partitioning_and_prediction.executor": "Run",
     "Python.separate_the_training-set_from_the_test-set.executor": "Debug",
     "RunOnceActivity.ShowReadmeOnStart": "true",
@@ -198,7 +197,7 @@
       <option name="presentableId" value="Default" />
       <updated>1763740625007</updated>
       <workItem from="1763740722799" duration="28778000" />
-      <workItem from="1764162710246" duration="1019000" />
+      <workItem from="1764162710246" duration="1345000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <option name="closed" value="true" />
@@ -368,7 +367,15 @@
       <option name="project" value="LOCAL" />
       <updated>1763807602507</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="read csv data">
+      <option name="closed" value="true" />
+      <created>1764163762174</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1764163762174</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -394,12 +401,12 @@
     <MESSAGE value="relative attractive" />
     <MESSAGE value="separate_the_training-set_from_the_test-set" />
     <MESSAGE value="predictive_model_decision-tree" />
-    <MESSAGE value="read csv data" />
     <MESSAGE value="histogram" />
     <MESSAGE value="age difference bar" />
     <MESSAGE value="pie chart and relative attractive" />
     <MESSAGE value="predictive model" />
-    <option name="LAST_COMMIT_MESSAGE" value="predictive model" />
+    <MESSAGE value="read csv data" />
+    <option name="LAST_COMMIT_MESSAGE" value="read csv data" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -455,7 +462,7 @@
     <SUITE FILE_PATH="coverage/IS5312$separate_the_training_set_from_the_test_set.coverage" NAME="separate_the_training-set_from_the_test-set Coverage Results" MODIFIED="1763805719551" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/IS5312$predictive_model_decision_tree.coverage" NAME="predictive_model_decision-tree Coverage Results" MODIFIED="1763807393802" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/IS5312$main.coverage" NAME="main Coverage Results" MODIFIED="1763797836022" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/IS5312$read_csv_data.coverage" NAME="read_csv_data Coverage Results" MODIFIED="1764163636551" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/IS5312$read_csv_data.coverage" NAME="read_csv_data Coverage Results" MODIFIED="1764163979287" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/IS5312$histogram.coverage" NAME="histogram Coverage Results" MODIFIED="1763803351597" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/IS5312$3_1_1.coverage" NAME="extract_variables_column Coverage Results" MODIFIED="1763777279621" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
